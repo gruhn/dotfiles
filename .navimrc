@@ -78,6 +78,7 @@ function! AfterAll()
   "set noexpandtab
 
   let g:AutoPairsMultilineClose = 0
+  let g:NERDTreeQuitOnOpen = 1
 
   let g:elm_setup_keybindings = 0
 
