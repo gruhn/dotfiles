@@ -89,6 +89,7 @@ function! AfterAll()
   au BufNewFile,BufRead,BufEnter *.tex  setlocal spell spelllang=en_us
   au BufNewFile,BufRead,BufEnter README setlocal spell spelllang=en_us
 
+  au BufRead,BufNewFile *.html5 set filetype=php
 endfunction
 
 
