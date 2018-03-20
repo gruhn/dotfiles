@@ -90,6 +90,10 @@ function! AfterAll()
   au BufNewFile,BufRead,BufEnter README setlocal spell spelllang=en_us
 
   au BufRead,BufNewFile *.html5 set filetype=php
+  
+	call denite#custom#var('file_rec', 'command',
+      \ ['ag', '--ignore-case', '--follow', '--nogroup', '-g', ''])
+
 endfunction
 
 
